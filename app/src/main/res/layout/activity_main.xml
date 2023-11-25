@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Save ID card"
+        android:padding="8dp"
+        android:id="@+id/savebutton"
+        android:layout_below="@+id/idcard"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="18dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/idcard"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:id="@+id/banklogo"
+            android:src="@drawable/bank_logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:id="@+id/bctxtt"
+            android:text="@string/bctxt"
+            android:layout_alignParentBottom="true" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/txtdetail"
+            android:padding="8dp"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/acnum"
+                android:text="A/c number"
+                android:layout_toRightOf="@id/acnumtxt" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/acnumtxt"
+                android:text="A/c number : "
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/ifsc"
+                android:layout_toRightOf="@id/ifsctxt"
+                android:text="IFSC "
+                android:layout_below="@id/acnum"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/ifsctxt"
+                android:text="IFSC :  "
+                android:layout_below="@id/acnum"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/cif"
+                android:layout_below="@id/ifsc"
+                android:layout_toRightOf="@id/ciftxt"
+                android:text="Cutomer ID"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/ciftxt"
+                android:layout_below="@id/ifsc"
+                android:text="Cutomer ID : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/name"
+                android:layout_toRightOf="@id/nametxt"
+                android:layout_below="@id/cif"
+                android:text="Customer Name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/nametxt"
+                android:layout_below="@id/cif"
+                android:text="Customer Name : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/num"
+                android:layout_below="@id/name"
+                android:layout_toRightOf="@id/numtxt"
+                android:text="Mobile Number"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/numtxt"
+                android:layout_below="@id/name"
+                android:text="Mobile Number : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/adhar"
+                android:layout_below="@id/num"
+                android:layout_toRightOf="@id/adhartxt"
+                android:text="Aadhar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/adhartxt"
+                android:layout_below="@id/num"
+                android:text="Aadhar : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/address"
+                android:layout_below="@id/adhar"
+                android:layout_toRightOf="@id/addresstxt"
+                android:text="Address"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:id="@+id/addresstxt"
+                android:layout_below="@id/adhar"
+                android:text="Address : "/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:scaleType="fitXY"
+                android:id="@+id/idimage"
+                android:src="@drawable/ic_launcher_foreground"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

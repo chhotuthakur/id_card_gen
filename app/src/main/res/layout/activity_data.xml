@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/banklogo2"
+        android:src="@drawable/bank_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/txt2detail"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/banklogo2">
+
+
+       
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/acnumtxt2"
+            android:maxLines="1"
+            android:hint="A/c number : "
+            />
+  
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/ifsctxt2"
+            android:maxLines="1"
+            android:hint="IFSC :  "
+            android:layout_below="@id/acnumtxt2"/>
+       
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/ciftxt2"
+            android:maxLines="1"
+            android:layout_below="@id/ifsctxt2"
+            android:hint="Cutomer ID : "/>
+    
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/nametxt2"
+            android:maxLines="1"
+            android:layout_below="@id/ciftxt2"
+            android:hint="Customer Name : "/>
+      
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/numtxt2"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_below="@id/nametxt2"
+            android:hint="Mobile Number : "/>
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:id="@+id/adhartxt2"
+            android:inputType="number"
+            android:maxLines="1"
+            android:layout_below="@id/numtxt2"
+            android:hint="Aadhar : "/>
+      
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:maxLines="1"
+            android:id="@+id/addresstxt2"
+            android:layout_below="@id/adhartxt2"
+            android:hint="Address : "/>
+
+    </RelativeLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/generate"
+        android:text="Save ID Card"
+        android:layout_below="@id/txt2detail"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select"
+        android:text="select Image"
+        android:layout_marginStart="5dp"
+        android:layout_below="@id/txt2detail"
+        android:layout_toRightOf="@id/reset"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reset"
+        android:text="Reset"
+        android:layout_below="@id/txt2detail"
+
+        android:layout_toRightOf="@id/generate"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custimg"
+        android:layout_below="@id/reset"
+        android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
